@@ -1,0 +1,13 @@
+Model,Train Accuracy,Test Accuracy,F1 Score,Overfitting (Y/N)
+FINAL TUNED: SVM,0.934,0.9266,0.9266,N
+SVM,0.9342,0.9247,0.9247,N
+Logistic Regression,0.9258,0.9243,0.9245,N
+SVM + SMOTE,0.9481,0.9236,0.9237,N
+Random Forest,0.9986,0.9221,0.9221,Y
+Random Forest + SMOTE,0.9985,0.921,0.921,Y
+Gradient Boosting (Ensemble),0.974,0.9207,0.9206,Y
+Logistic Regression + SMOTE,0.9414,0.9199,0.9202,N
+KNN,0.9359,0.9159,0.9161,N
+Naive Bayes,0.8984,0.8997,0.8999,N
+Decision Tree,0.9937,0.8964,0.8964,Y
+AdaBoost,0.8381,0.8223,0.8095,N
