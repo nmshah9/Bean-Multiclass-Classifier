@@ -49,7 +49,6 @@ try:
         banner = banner.resize((1800, 450))
 except Exception:
     banner = None  # any problem with the image file -> just skip it, never crash the app
-BANNER_PATH = "assets/banner.png"  # adjust to your actual path
 if banner is not None:
     st.image(banner)
 # ===============================================================================================================================
