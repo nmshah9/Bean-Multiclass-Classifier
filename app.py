@@ -41,12 +41,6 @@ st.set_page_config(
     layout="wide",
 )
 
-BANNER_PATH = "banner.png"  # adjust to your actual path
-
-banner = Image.open(BANNER_PATH)
-
-# Resize if needed
-banner = banner.resize((1200, 300))
 # ==========================================================================
 AERIES_NAVY = "#0B2545"
 AERIES_TEAL = "#0F8B8D"
