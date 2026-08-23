@@ -46,9 +46,9 @@ BANNER_PATH = "banner.png"  # adjust to your actual path
 banner = Image.open(BANNER_PATH)
 
 # Resize if needed
-banner = banner.resize((1800, 450))
+banner = banner.resize((1200, 300))
 # Display centered using Markdown wrapper
-col1, col2, col3 = st.columns([0.5,5,1])  # middle column wider
+col1, col2, col3 = st.columns([1,5,1])  # middle column wider
 with col2:
     st.image(banner, width=1800)
 AERIES_NAVY = "#0B2545"
