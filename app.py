@@ -41,16 +41,18 @@ st.set_page_config(
     layout="wide",
 )
 
+BANNER_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "banner.png")
+banner = None
+try:
+    if os.path.exists(BANNER_PATH):
+        banner = Image.open(BANNER_PATH)
+        banner = banner.resize((1800, 450))
+except Exception:
+    banner = None  # any problem with the image file -> just skip it, never crash the app
 BANNER_PATH = "assets/banner.png"  # adjust to your actual path
-
-banner = Image.open(BANNER_PATH)
-
-# Resize if needed
-banner = banner.resize((1800, 450))
-# Display centered using Markdown wrapper
-col1, col2, col3 = st.columns([0.5,5,1])  # middle column wider
-with col2:
-    st.image(banner, width=1800)
+if banner is not None:
+    st.image(banner)
+===============================================================================================================================
 
 AERIES_NAVY = "#0B2545"
 AERIES_TEAL = "#0F8B8D"
