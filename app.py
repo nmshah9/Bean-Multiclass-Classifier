@@ -41,7 +41,7 @@ st.set_page_config(
     layout="wide",
 )
 
-BANNER_PATH = "banner.png"  # adjust to your actual path
+BANNER_PATH = "assets/banner.png"  # adjust to your actual path
 
 banner = Image.open(BANNER_PATH)
 
